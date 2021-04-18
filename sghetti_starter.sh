@@ -11,6 +11,8 @@ sudo apt-get install -y git
 sudo apt-get install -y emacs
 
 #Betty - 212
+#Not yet functional
+#echo command not necessary. Rename/mv betty.sh to /bin/betty
 git clone https://github.com/holbertonschool/Betty.git
 sudo ./Betty/install.sh
 echo '
@@ -38,6 +40,7 @@ chmod a+x /Betty/betty
 sudo mv /Betty/betty /bin/
 
 #Pep8 - 231
+#Not functional
 sudo apt-get install -y python3-pip
 sudo pip3 install -y -Iv pep8==1.7.0
 
@@ -45,23 +48,28 @@ sudo pip3 install -y -Iv pep8==1.7.0
 sudo apt-get install -y shellcheck
 
 #node10 - 303
+#Not functional
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 #Semistandard - 303
+#Not functional
 sudo npm install -y semistandard --global
 
 #MySQL - 272
+#Not functional
 echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a /etc/apt/sources.list
 sudo apt-get install -y mysql-server-5.7
 
 #MySQLdb - 283
+#Not functional
 sudo apt-get install -y python3-dev
 sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y zlib1g-dev
 sudo pip3 install -y mysqlclient==1.3.10
 
 #SQLAlchemy - 283
+#Not functional
 sudo pip3 install -y SQLAlchemy==1.2.5
 
 #PuppetLint - 292
@@ -69,9 +77,11 @@ sudo apt-get install -y ruby
 sudo gem install -y puppet-lint -v 2.1.1
 
 #W3C Validator - 268
+#Clones successfully, may need PATH implementation for global use
 git clone https://github.com/holbertonschool/W3C-Validator.git
 
 #Fabric - 288
+#Not functional, try w/o sudo and -y on pip3 commands
 sudo pip3 uninstall -y Fabric
 sudo apt-get install -y libffi-dev
 sudo apt-get install -y libssl-dev
@@ -86,6 +96,12 @@ sudo pip3 install -y bcrypt==3.1.7
 sudo pip3 install -y PyNaCl==1.3.0
 sudo pip3 install -y Fabric3==1.14.post1
 
+#Extra Features
 
-#Clone Repositories
+#Cloning Repositories
 #Prompt for Github info
+#Create conditionals to check/clone each repo
+
+#Store Github credentials
+
+#implement global gitignore
